@@ -1,0 +1,879 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+
+/* ==========================================================================
+   Aquí comienza mi proyecto
+   ========================================================================== */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Big Shoulders", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #151515;
+}
+
+.header-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.h2-desktop {
+  display: none;
+}
+
+.container-header {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 32px;
+}
+
+.container-header p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  max-width: 266px;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-text {
+  background-color: #151515;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Big Shoulders", sans-serif;
+  padding: 24px 35px 24px 32px;
+  letter-spacing: 2.64px;
+  line-height: 24px;
+}
+
+.button-img {
+  background-color: #d5966c;
+  width: 8px;
+  height: 24px;
+  padding: 24px;
+}
+
+.button:hover .button-text {
+  background-color: #d5966c;
+}
+
+.button:hover .button-img {
+  background-color: #151515;
+}
+
+main {
+  margin-top: 120px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#galeria-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 25px;
+}
+
+.container-main .text-grey {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
+}
+
+#cuadro-banco {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 16px;
+}
+
+#corredor {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 16px;
+}
+
+.black {
+  background-color: #151515;
+  padding: 48px 24px 47px 24px;
+}
+
+.container-main .black h2 {
+  color: white;
+}
+
+.container-main .black p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  margin-top: 24px;
+}
+
+footer {
+  margin-top: 120px;
+  background-color: #151515;
+  padding: 48px 32px;
+}
+
+footer img {
+  width: 110px;
+}
+
+footer p {
+  margin: 38px 0;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+footer .redes-sociales {
+  display: flex;
+  gap: 20px;
+}
+
+footer .redes-sociales img {
+  width: 20px;
+  height: 20px;
+}
+
+.mapa {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mapa-tablet {
+  display: none;
+}
+
+.container-location-header {
+  position: relative;
+}
+
+.container-location-header .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-location {
+  padding: 0;
+  margin: 0;
+}
+
+.container-location-main {
+  background-color: #151515;
+  padding-bottom: 56px;
+}
+
+.container-location-main h2 {
+  color: white;
+  padding: 48px 16px;
+}
+
+.container-location-main h3 {
+  color: #d5966c;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.address, .location-text {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 16px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.footer-location {
+  margin: 0;
+  background-color: #d5966c;
+}
+
+.container-location-footer p {
+  color: #151515;
+}
+
+#galeria-tablet-img {
+  display: none;
+}
+
+#cuadro-banco-desktop {
+  display: none;
+}
+
+
+
+
+
+
+/* Media Query para Tablet Vertical (768px) */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+  }
+
+  .header-img {
+    width: 437px;
+    height: 700px;
+  }
+
+  .container-header {
+    width: 339px;
+    padding: 0;
+    height: 410px;
+    margin-top: 145px;
+    margin-left: -40px;
+  }
+
+  .container-main {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+
+  .main-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .main-top-text {
+    width: 223px;
+    margin-top: 36px;
+    margin-right: 68px;
+  }
+
+  #galeria-img {
+    display: none;
+  }
+
+  #galeria-tablet-img {
+    display: block;
+    max-width: 398px;
+  }
+
+  .main-top-text p {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .main-bottom {
+    display: flex;
+    margin-top: 11px;
+    justify-content: center;
+  }
+
+  #cuadro-banco {
+    width: 398px;
+    height: 720px;
+  }
+
+  .main-bottom-right {
+    margin-left: 11px;
+  }
+
+  #corredor {
+    width: 280px;
+    height: 313px;
+    margin: 0;
+  }
+
+  .black {
+    margin-top: 11px;
+    padding: 85px 28px 85px 29px;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  .container-footer {
+    display: flex;
+    padding: 56px 40px 56px 39px;
+    align-content: flex-start;
+  }
+
+  .container-footer img {
+    height: 40px;
+  }
+
+  .container-footer p {
+    margin: 0;
+    margin-left: 65px;
+    margin-right: 133px;
+  }
+
+  .mapa {
+    display: none;
+  }
+
+  .mapa-tablet {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .container-location-main {
+    display: flex;
+    padding: 88px 40px 80px 39px;
+    align-content: flex-start;
+    gap: 68px;
+  }
+
+  .container-location-main h2 {
+    padding: 0;
+    width: 223px;
+    height: 100px;
+  }
+
+  #main-text {
+    width: 398px;
+  }
+
+  .footer-location {
+    padding: 0;
+  }
+
+  .container-location-footer {
+    display: flex;
+    padding: 56px 40px 56px 39px;
+    align-content: flex-start;
+  }
+
+  .container-location-footer img {
+    height: 40px;
+  }
+
+  .container-location-footer p {
+    margin: 0;
+    margin-left: 65px;
+    margin-right: 133px;
+  }
+
+
+
+}
+
+
+
+
+
+/* Media Query para Desktop (1440px) */
+@media (min-width: 1440px) {
+  .body-home {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .negro {
+    background-color: #151515;
+    width: 450px;
+    height: 800px;
+  }
+
+  .header-img {
+    width: 540px;
+    height: 800px;
+  }
+
+  h1 {
+    color: white;
+    margin-left: -763px;
+    margin-top: 50px;
+    font-size: 96px;
+    line-height: 88px;
+  }
+
+  #header-text {
+    margin-top: -210px;
+    width: 350px;
+  }
+
+  #header-text p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+
+  .main-top-text {
+    width: 350px;
+    margin-top: 36px;
+    margin-right: 68px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .container-main {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  #galeria-img {
+    display: block;
+    width: 635px;
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  #galeria-tablet-img {
+    display: none;
+  }
+
+  .main-top {
+    justify-content: space-between;
+  }
+
+  .main-top-text {
+    width: 350px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .main-top-text .text-grey {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .h2-desktop {
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .h2-mobile {
+    display: none;
+  }
+
+  .main-bottom {
+    margin-top: 30px;
+  }
+
+  #corredor {
+    width: 445px;
+    height: 313px;
+  }
+
+  .main-bottom-right {
+    margin-left: 30px;
+  }
+
+  #cuadro-banco-desktop {
+    display: block;
+    width: 635px;
+    height: 720px;
+  }
+
+  #cuadro-banco {
+    display: none;
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-bottom-right .black {
+    margin-top: 30px;
+    padding: 65px 47px 64px 48px;
+  }
+
+  .main-bottom-right .black .text-white {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 32px;
+  }
+
+  footer {
+    margin-top: 180px;
+  }
+
+  .container-footer {
+    padding: 80px 165px;
+  }
+
+  #logo-footer {
+    width: 160px;
+    height: 58px;
+  }
+
+  .container-footer p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 140px;
+    margin-right: 280px;
+  }
+
+  .body-location {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-location-header .button {
+    left: 156px;
+  }
+
+  .container-location-main {
+    padding: 104px 165px 128px 165px;
+  }
+
+  .h2-main-location {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  #main-text {
+    margin-left: 260px;
+  }
+
+  #main-text h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .address {
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .location-text {
+    margin-top: 32px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .container-location-footer {
+      padding: 80px 165px;
+  }
+
+  .container-location-footer img {
+    width: 160px;
+    height: 58px;
+  }
+
+  .container-location-footer p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 140px;
+    margin-right: 280px;
+  }
+
+}
+
+
+
+
+
+
+
+
