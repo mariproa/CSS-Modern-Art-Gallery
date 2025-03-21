@@ -17,4 +17,6 @@ En esta ocasión, se desarrolló un mini-site de dos vistas con responsive para 
 - ✅ **Interactividad**: Los elementos interactuables (botones, enlaces, etc.) deben contar con su estado hover.
 - ✅ **Responsive**: Maquetar con mobile first, es decir, empezando desde móvil hacia arriba haciendo uso de media querys.
 
+[Visita el sitio web](https://mariproa.github.io/CSS-Modern-Art-Gallery/)
+
 
